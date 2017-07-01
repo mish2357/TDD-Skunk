@@ -20,5 +20,11 @@ public class TestSkunkApp {
 		assertEquals("Player1",game.getPlayerName(1));
 		assertEquals("Player1",game.getPlayerName(1));
 	}
+	@Test
+	 public void canCreateRoll(){
+		Roll roll = new Roll();
+		assertTrue(roll.getLastTotal()<=12);
+		assertTrue(roll.getLastTotal()>=2);
+	}
 
 }
