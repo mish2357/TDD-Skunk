@@ -2,7 +2,7 @@
 public class Roll {
 
 	private int lastTotal;
-
+	
 	public Roll() {
 		lastTotal = rollDie() + rollDie();
 		
@@ -16,6 +16,11 @@ public class Roll {
 	public int getLastTotal() {
 		// TODO Auto-generated method stub
 		return lastTotal;
+	}
+
+	public Object getRoll() {
+		// TODO Auto-generated method stub
+		return rollDie();
 	}
 
 }

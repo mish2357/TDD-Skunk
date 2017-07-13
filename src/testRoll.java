@@ -11,8 +11,9 @@ public class testRoll {
 		assertTrue(roll.getLastTotal() >= 2);
 	}
 	@Test
-	public boolean testHasSkunk(){
+	public void testHasSkunk(){
 		assertEquals(1,roll.getRoll());
+		
 	}
 
 }
