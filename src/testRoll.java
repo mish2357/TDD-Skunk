@@ -23,6 +23,6 @@ public class testRoll {
 	@Test
 	public void testHasSkunkandDeuce(){
 		assertEquals(1,roll.getHasSkunkandDeuce());
-		
+		assertEquals(2,roll.getHasSkunkandDeuce());
 	}
 }

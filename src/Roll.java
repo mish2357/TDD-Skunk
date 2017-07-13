@@ -60,9 +60,16 @@ public class Roll {
 
 
 
-	public Object getHasTwoSkunk() {
+	public boolean getHasTwoSkunk() {
 		// TODO Auto-generated method stub
 		return rollDie1() == 1 && rollDie2()==1 ;
+	}
+
+
+
+	public boolean getHasSkunkandDeuce() {
+		// TODO Auto-generated method stub
+		return (boolean) getHasSkunk() && (rollDie1()==2||rollDie2()==2);
 	}
 
 }
