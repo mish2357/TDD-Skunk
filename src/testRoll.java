@@ -15,5 +15,9 @@ public class testRoll {
 		assertEquals(1,roll.getRoll());
 		
 	}
-
+	@Test
+	public void testHasTwoSkunk(){
+		assertEquals(2,roll.getLastTotal());
+		
+	}
 }
