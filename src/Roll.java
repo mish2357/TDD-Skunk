@@ -8,6 +8,8 @@ public class Roll {
 		
 
 	}
+	
+	
 
 	private int rollDie() {
 		return (int) Math.random() * 6 + 1;
@@ -18,9 +20,49 @@ public class Roll {
 		return lastTotal;
 	}
 
-	public int getRoll() {
+	public int getRollDie1() {
+		// TODO Auto-generated method stub
+		return rollDie1();
+	}
+
+	private int rollDie1() {
 		// TODO Auto-generated method stub
 		return rollDie();
+	}
+
+
+
+	
+
+
+	public int getRollDie2() {
+		// TODO Auto-generated method stub
+		return rollDie2();
+	}
+
+
+
+	private int rollDie2() {
+		// TODO Auto-generated method stub
+		return rollDie();
+	}
+
+
+
+	
+
+
+	public Object getHasSkunk() {
+		// TODO Auto-generated method stub
+		return rollDie1() == 1 || rollDie2()==1 ;
+		
+	}
+
+
+
+	public Object getHasTwoSkunk() {
+		// TODO Auto-generated method stub
+		return rollDie1() == 1 && rollDie2()==1 ;
 	}
 
 }
