@@ -56,5 +56,28 @@ public class Roll {
 	private boolean getHasDeuce() {
 		return (boolean) (rollDie1() == 2 || rollDie2() == 2);
 	}
+	public String toString(){
+		String rollToString =  rollDie1() + " - " +rollDie2() + "\n";
+		if(getHasSkunk()){
+			
+			// only one skunk
+			if(!getHasTwoSkunk() && ! getHasSkunkandDeuce()){
+				rollToString += "  the player rolled 'A SKUND' so he lost his trurn and 1 chip\n";
+			}
+			
+			if(getHasSkunkandDeuce()){
+				rollToString += "  the player rolled  'A SKUND AND A DUCE' so he lost his trurn and 2 chips\n";
+			}
+			
+			if(getHasTwoSkunk()){
+
+				rollToString += "  the player rolled 'TWO SKUNKs' so he lost his trurn, score,  and 4 chips\n";
+			}
+			
+			
+		}
+		return rollToString;
+		
+	}
 
 }
