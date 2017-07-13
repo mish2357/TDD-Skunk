@@ -25,4 +25,6 @@ public class testRoll {
 		assertEquals(true,roll.getHasSkunkandDeuce());
 		
 	}
+	
+	
 }
