@@ -12,17 +12,17 @@ public class testRoll {
 	}
 	@Test
 	public void testHasSkunk(){
-		assertEquals(1,roll.getHasSkunk());
-		
-	}
+		boolean ans = true;
+		assertEquals(ans,roll.getHasSkunk());
+		}
 	@Test
 	public void testHasTwoSkunk(){
-		assertEquals(2,roll.getHasTwoSkunk());
+		assertEquals(true,roll.getHasTwoSkunk());
 		
 	}
 	@Test
 	public void testHasSkunkandDeuce(){
-		assertEquals(1,roll.getHasSkunkandDeuce());
-		assertEquals(2,roll.getHasSkunkandDeuce());
+		assertEquals(true,roll.getHasSkunkandDeuce());
+		
 	}
 }

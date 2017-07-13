@@ -2,9 +2,10 @@
 public class Roll {
 
 	private int lastTotal;
+	private int die1;
 	
 	public Roll() {
-		lastTotal = rollDie() + rollDie();
+		lastTotal = rollDie1() + rollDie2();
 		
 
 	}
@@ -22,12 +23,11 @@ public class Roll {
 
 	public int getRollDie1() {
 		// TODO Auto-generated method stub
-		return rollDie1();
+		return die1;
 	}
 
 	private int rollDie1() {
-		// TODO Auto-generated method stub
-		return rollDie();
+		return die1 = rollDie();
 	}
 
 
@@ -52,7 +52,7 @@ public class Roll {
 	
 
 
-	public Object getHasSkunk() {
+	public boolean getHasSkunk() {
 		// TODO Auto-generated method stub
 		return rollDie1() == 1 || rollDie2()==1 ;
 		
