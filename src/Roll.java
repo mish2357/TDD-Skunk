@@ -18,7 +18,7 @@ public class Roll {
 		return lastTotal;
 	}
 
-	public Object getRoll() {
+	public int getRoll() {
 		// TODO Auto-generated method stub
 		return rollDie();
 	}
