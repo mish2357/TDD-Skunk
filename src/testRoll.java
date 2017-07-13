@@ -12,7 +12,7 @@ public class testRoll {
 	}
 	@Test
 	public boolean testHasSkunk(){
-		assertEquals(1,roll.getRoll);
+		assertEquals(1,roll.getRoll());
 	}
 
 }
